@@ -1,0 +1,371 @@
+/*ОБЩИЕ*/
+.container {
+  width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*МЕНЮ*/
+nav {
+  background-color: black;
+  height: 75px;
+}
+.nav_flex {
+  display: flex;
+  flex-direction: row;
+}
+.nav_flex_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+}
+.img_poisk {
+  margin: 28.21px 5px 20px 41px;
+  width: 26px;
+  height: 26.79px;
+}
+.input {
+  background-color: transparent;
+  border: transparent;
+  height: 26px;
+  width: 5px;
+  transition: .5s;
+}
+.poisk:hover input{
+  border: transparent;
+  width: 250px;
+  background: #F16D7F;
+  border-radius: 10px;
+  color: white;
+}
+.nav_flex_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 50%;
+}
+.nav_flex_right img {
+  padding-left: 33px;
+}
+/*ТОП*/
+.top {
+  background: #F1E4E6;
+  height: 764px;
+}
+.top_flex {
+  display: flex;
+}
+.top_flex_left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+.top_flex_right {
+  display: flex;
+  width: 50%;
+  justify-content: flex-start;
+  align-items: center;
+}
+.top_flex_right:hover {
+  transform: scale(1.2);
+}
+.pink {
+  background-color: #F16D7F;
+  padding: 46px 6px;
+}
+.top_txt {
+  margin-left: 16px;
+}
+.thebrand {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 57.6px;
+}
+.ofluxfasion {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38.4px;
+}
+.ofluxfasion span {
+  color: #F16D7F;
+}
+/*КАТАЛОГ*/
+.top_catalog {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  margin-top: 65px;
+}
+.top_catalog a {
+  text-decoration: none;
+}
+.top_catalog img {
+  filter: brightness(30%);
+  transition: 1s;
+  position: relative;
+}
+.top_catalog:hover img {
+  filter: brightness(70%);
+}
+.top_catalog_woman {
+  width: 154px;
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 1009px;
+  left: 475px;
+  color: #ffff;
+}
+.top_catalog_woman span {
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27.8px;
+
+}
+.top_catalog_woman:hover {
+  transform: scale(2);
+  border-radius: 80%;
+}
+.top_catalog_man {
+  width: 110px;
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 1009px;
+  left: 890px;
+  color: #ffff;
+}
+.top_catalog_man span {
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27.8px;
+
+}
+.top_catalog_man:hover {
+  transform: scale(2);
+  border-radius: 80%;
+}
+.top_catalog_kids {
+  width: 120px;
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 1009px;
+  left: 1290px;
+  color: #ffff;
+}
+.top_catalog_kids span {
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27.8px;
+
+}
+.top_catalog_kids:hover {
+  transform: scale(2);
+  border-radius: 80%;
+}
+.top_catalog_acces {
+  width: 166px;
+  text-align: center;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: absolute;
+  top: 1259px;
+  left: 890px;
+  color: #ffff;
+}
+.top_catalog_acces span {
+  color: #F16D7F;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 27.8px;
+
+}
+.top_catalog_acces:hover {
+  transform: scale(2);
+  border-radius: 80%;
+}
+/*ТЕКСТ*/
+.txt_fetured {
+  text-align: center;
+  margin-top: 96px;
+}
+.txt_fetured h1 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+.txt_fetured p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  margin-top: 6px;
+  margin-bottom: 48px;
+}
+/*КАРТОЧКИ*/
+.box_cards {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+}
+.cards {
+  text-decoration: none;
+  background-color: #F8F8F8;
+}
+.cards img:hover {
+  filter: brightness(14%);
+}
+.cards h5 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  padding-left: 16px;
+  padding-top: 25px;
+}
+.cards p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5D5D5D;
+  padding-left: 16px;
+  padding-top: 16px;
+}
+.cards h4 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F16D7F;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+/*ОТКРЫТЬ ВСЕ ПРОДУКТЫ*/
+.btnallprod {
+  margin-top: 48.5px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 95.5px;
+}
+.browseallprod {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  background-color: #ffff;
+  border: 1px solid #FF6A6A;
+  padding: 14.5px 38.5px 16.5px 38.5px;
+  text-decoration: none;
+}
+.browseallprod:hover {
+  color: #ffff;
+  background-color: #F26376;
+}
+/*ФУТЕР 1*/
+.footer1_fon {
+  background: #222224;
+  height: 341px;
+}
+.footer1itemsbox {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 360px);
+  justify-content: center;
+  text-align: center;
+}
+.footer1item h5 {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19.96px;
+  line-height: 24px;
+  color: #FBFBFB;
+  margin-top: 25.06px;
+}
+.footer1item p {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+  text-align: center;
+  color: #FBFBFB;
+  margin-top: 16.01px;
+  margin-bottom: 104px;
+}
+.footer1item img {
+  margin-top: 103px;
+}
+/*ФУТЕР 2*/
+.footer2_fon img {
+ width: 100%;
+ filter: opacity(30%)
+}
+.footer2 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+/*ФУТЕР 3*/
+.footer3_fon {
+  background-color: #222224;
+  height: 79px;
+}
+.footer3 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+.reg {
+  margin-top: 30px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FBFBFB;
+}
+.mail {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+.mail img {
+  margin-left: 7.30px;
+}
