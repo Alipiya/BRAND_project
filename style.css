@@ -104,110 +104,11 @@ nav {
 .top_catalog a {
   text-decoration: none;
 }
-.top_catalog img {
-  filter: brightness(30%);
-  transition: 1s;
-  position: relative;
+.top_catalog_acces_span {
+  width: 100%;
+  margin-top: 30px;
 }
-.top_catalog:hover img {
-  filter: brightness(70%);
-}
-.top_catalog_woman {
-  width: 154px;
-  text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  position: absolute;
-  top: 1009px;
-  left: 475px;
-  color: #ffff;
-}
-.top_catalog_woman span {
-  color: #F16D7F;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 27.8px;
 
-}
-.top_catalog_woman:hover {
-  transform: scale(2);
-  border-radius: 80%;
-}
-.top_catalog_man {
-  width: 110px;
-  text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  position: absolute;
-  top: 1009px;
-  left: 890px;
-  color: #ffff;
-}
-.top_catalog_man span {
-  color: #F16D7F;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 27.8px;
-
-}
-.top_catalog_man:hover {
-  transform: scale(2);
-  border-radius: 80%;
-}
-.top_catalog_kids {
-  width: 120px;
-  text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  position: absolute;
-  top: 1009px;
-  left: 1290px;
-  color: #ffff;
-}
-.top_catalog_kids span {
-  color: #F16D7F;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 27.8px;
-
-}
-.top_catalog_kids:hover {
-  transform: scale(2);
-  border-radius: 80%;
-}
-.top_catalog_acces {
-  width: 166px;
-  text-align: center;
-  font-family: 'Lato';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  position: absolute;
-  top: 1259px;
-  left: 890px;
-  color: #ffff;
-}
-.top_catalog_acces span {
-  color: #F16D7F;
-  font-weight: 700;
-  font-size: 23px;
-  line-height: 27.8px;
-
-}
-.top_catalog_acces:hover {
-  transform: scale(2);
-  border-radius: 80%;
-}
 /*ТЕКСТ*/
 .txt_fetured {
   text-align: center;
@@ -368,4 +269,135 @@ nav {
 }
 .mail img {
   margin-left: 7.30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_flex {
+    width: 768px
+  }
+  .nav_flex_left {
+    width: 100%;
+  }
+  .nav_flex_right {
+    width: 100%;
+  }
+  .top {
+    height: 386px;
+  }
+  .top_flex_left img {
+    height: 386px;
+  }
+  .thebrand {
+    font-size: 44px;
+    line-height: 53px;
+  }
+  .ofluxfasion {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .top_catalog {
+    display: grid;
+    gap: 19px;
+    grid-template-columns: repeat(3, 231.97px);
+    justify-content: center;
+    margin-top: 65px;
+  }
+  .top_catalog img {
+    width: 100%;
+  }
+  .top_catalog_acces {
+    width: 100%;
+    justify-content: center;
+  }
+  .top_catalog_acces_span {
+    margin-top: 20px;
+  }
+  .box_cards {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
+  }
+  .footer1_fon {
+    height: 610px;
+  }
+  .footer1itemsbox {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(1, 360px);
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+  }
+  .footer1item p {
+    margin-bottom: 0%;
+  }
+  .footer1item img {
+    margin-top: 0%;
+  }
+  
+}
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .rew-flex {
+    flex-direction: column;
+  }
+
+  .rew-box {
+    display: flex;
+    padding-bottom: 3%;
+  }
+
+  .box-rew-img {
+    margin-right: 5%;
+  }
+
+  .header {
+    background-color: red;
+  }
+}
+@media screen and (max-width: 375px) {
+  .item-1,
+.item-2,
+.item-3,
+.img-flex img {
+    width: 100%;
+    min-height: 180px;
+    margin-bottom: 3%;
+  }
+
+  .img-left-box,
+.img-right-box,
+.product {
+    width: 100%;
+  }
+
+  .img-right-box {
+    flex-wrap: wrap;
+  }
+
+  .img-flex {
+    flex-wrap: wrap;
+  }
+
+  .item-parent {
+    flex-wrap: wrap;
+  }
+
+  .product {
+    min-height: 250px;
+  }
+
+  .rew-flex {
+    flex-direction: column;
+  }
+
+  .rew-box {
+    margin-bottom: 4%;
+  }
 }
