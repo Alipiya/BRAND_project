@@ -278,9 +278,6 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
-  .nav_flex {
-    width: 768px
-  }
   .nav_flex_left {
     width: 100%;
   }
@@ -312,8 +309,10 @@ nav {
     width: 100%;
   }
   .top_catalog_acces {
-    width: 100%;
-    justify-content: center;
+    width: 762px;
+  }
+  .top_catalog_acces a {
+    width: 762px;
   }
   .top_catalog_acces_span {
     margin-top: 20px;
@@ -340,5 +339,100 @@ nav {
   }
   .footer1item img {
     margin-top: 0%;
-  } 
+  }
+  
+}
+@media screen and (max-width: 320px) {
+  .container {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .nav_flex_left {
+    width: 100%;
+  }
+  .nav_flex_right {
+    width: 100%;
+  }
+  .top {
+    height: 386px;
+  }
+  .top_flex_left {
+    width: 10%;
+  }
+  .top_flex_left img {
+    display: none;
+  }
+  .top_txt {
+    margin-top: 145px;
+    width: 90%;
+  }
+  .thebrand {
+    font-size: 32px;
+    line-height: 40px;
+    width: 236px;
+  }
+  .ofluxfasion {
+    width: 236px;
+    font-size: 15px;
+    line-height: 100px;
+  }
+  .top_catalog {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 343px);
+    justify-content: center;
+    margin-top: 65px;
+  }
+  .top_catalog img {
+    width: 100%;
+  }
+  .top_catalog_acces {
+    width: 320px;
+  }
+  .top_catalog_acces a {
+    width: 343px;
+  }
+  .top_catalog_acces_span {
+    margin-top: 20px;
+  }
+  .box_cards {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(1, 360px);
+    justify-content: center;
+  }
+  .footer1_fon {
+    height: 610px;
+  }
+  .footer1itemsbox {
+    display: grid;
+    gap: 45px;
+    grid-template-columns: repeat(1, 360px);
+    justify-content: center;
+    text-align: center;
+    padding-top: 35px;
+  }
+  .footer1item p {
+    margin-bottom: 0%;
+  }
+  .footer1item img {
+    margin-top: 0%;
+  }
+  .footer3_fon {
+    height: 143px;
+  }
+  .footer3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .reg {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .mail {
+    margin-top: 43px;
+    display: flex;
+    justify-content: center;
+  }
 }
